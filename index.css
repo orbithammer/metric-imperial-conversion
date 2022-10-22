@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Inter, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1F2937;
+}
+
+.header {
+    background-color: #6943FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light-btn-wrapper {
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #6943FF;
+    padding-right: 20px;
+}
+
+.light-btn {
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    border: none;
+}
+
+.light-btn-text {
+    text-align: start;
+    width: 43px;
+}
+
+.title {
+    color: #fff;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.03rem;
+    margin: 0;
+}
+
+.amount {
+    box-sizing: border-box;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    width: 117px;
+    height: 83px;
+    background-color: transparent;
+    font-weight: 800;
+    font-size: 58px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px 0 26px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.convert-btn {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    line-height: 24px;
+    color: #3D3D3D;
+    padding: 9px 28px;
+    margin-bottom: 39px;
+    border: none;
+}
+
+.size-btn {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border-radius: 5px;
+    color: #3D3D3D;
+    border: none;
+    padding: 4px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #1F2937; */
+    padding: 19px 0;
+}
+
+.measurement {
+    background-color: #273549;
+    width: 500px;
+    height: 109px;
+    margin: 12px 25px;
+    border-radius: 5px 0 0 0;
+    text-align: center;
+}
+
+.measurement--title {
+    color: #CCC1FF;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.measurement--conversion {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}

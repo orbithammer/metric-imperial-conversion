@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/8c5729bf07.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="light-btn-wrapper" id="light-btn-wrapper-el">
+            <p class="light-btn-text" id="light-btn-text-el" onclick="lightMode()">LIGHT </p>
+            <button class="light-btn" id="light-btn-el" onclick="lightMode()">
+                <i class="fa-solid fa-toggle-on" id="light-btn-icon-el"></i>
+            </button>
+        </div> <!--light-mode-btn-wrapper -->
+        <div class="header">
+            <h1 class="title">Metric/Imperial Unit Conversion</h1>
+            <input type="number" class="amount" id="amount-number" onchange="convert()" value="1" min="1" max="99">
+            <div class="btn-wrapper">
+                <button class="size-btn" onclick="setSize(-1)" >Smaller</button>
+                <button class="convert-btn" onclick="convert()" >Convert</button>
+                <button class="size-btn" onclick="setSize(1)" >Bigger</button>
+            </div>
+
+        </div> <!-- header -->
+        <div class="main" id="light-main-el" >
+            <div class="measurement" id="light-length-el" >
+                <p class="measurement--title" id="measurement--title-length-el" >Length</p>
+                <p class="measurement--conversion" id="length-el" >1 meter = 3.281 feet | 1 foot = 0.3048 meters</p>
+            </div>
+            <div class="measurement" id="light-volume-el" >
+                <p class="measurement--title" id="measurement--title-volume-el" >Volume</p>
+                <p class="measurement--conversion" id="volume-el">1 liter = 0.264 gallons | 1 gallon = 3.78541 liters</p>
+            </div>
+            <div class="measurement" id="light-mass-el" >
+                <p class="measurement--title" id="measurement--title-mass-el" >Mass</p>
+                <p class="measurement--conversion" id="mass-el">1 kilogram = 2.204 pounds | 1 pound = 0.453592 kilograms</p>
+            </div>
+        </div> <!-- main -->
+    <script src="index.js"></script>
+    </body>
+</html>
