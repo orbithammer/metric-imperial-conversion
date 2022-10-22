@@ -56,6 +56,7 @@ function convert() {
 }
 
 let isLightMode = false
+const lightBodyEl = document.getElementById("light-body-el")
 const lightMainEl = document.getElementById("light-main-el")
 const lightBtnTextEl = document.getElementById("light-btn-text-el")
 const lightBtnIconEl = document.getElementById("light-btn-icon-el")
@@ -72,6 +73,7 @@ function lightMode() {
         lightBtnTextEl.textContent = "DARK"
         lightBtnIconEl.classList.remove("fa-toggle-on")
         lightBtnIconEl.classList.add("fa-toggle-off")
+        lightBodyEl.style.backgroundColor = "#F4F4F4"
         lightMainEl.style.backgroundColor = "#F4F4F4"
         lightLengthEl.style.backgroundColor = "#fff"
         lightVolumeEl.style.backgroundColor = "#fff"
@@ -86,6 +88,7 @@ function lightMode() {
         lightBtnTextEl.textContent = "LIGHT"
         lightBtnIconEl.classList.remove("fa-toggle-off")
         lightBtnIconEl.classList.add("fa-toggle-on")
+        lightBodyEl.style.backgroundColor = "#1F2937"
         lightMainEl.style.backgroundColor = "#1F2937"
         lightLengthEl.style.backgroundColor = "#273549"
         lightVolumeEl.style.backgroundColor = "#273549"
