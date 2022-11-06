@@ -7,13 +7,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     </head>
     <body id="light-body-el">
-        <div class="light-btn-wrapper" id="light-btn-wrapper-el">
-            <p class="light-btn-text" id="light-btn-text-el" onclick="lightMode()">LIGHT </p>
-            <button class="light-btn" id="light-btn-el" onclick="lightMode()">
-                <i class="fa-solid fa-toggle-on" id="light-btn-icon-el"></i>
-            </button>
-        </div> <!--light-mode-btn-wrapper -->
+        
         <div class="header">
+            <div class="light-btn-wrapper" id="light-btn-wrapper-el">
+                <p class="light-btn-text" id="light-btn-text-el" onclick="lightMode()">LIGHT </p>
+                <button class="light-btn" id="light-btn-el" onclick="lightMode()">
+                    <i class="fa-solid fa-toggle-on" id="light-btn-icon-el"></i>
+                </button>
+            </div> <!--light-mode-btn-wrapper -->
             <h1 class="title">Metric/Imperial Unit Conversion</h1>
             <input type="number" class="amount" id="amount-number" onchange="convert()" value="1" min="1" max="99">
             <div class="btn-wrapper">

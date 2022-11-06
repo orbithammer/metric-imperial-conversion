@@ -8,10 +8,6 @@ body {
     overflow: visible !important;
 }
 
-/* html {
-    overflow: visible;
-} */
-
 .header {
     background-color: #6943FF;
     display: flex;
@@ -23,9 +19,12 @@ body {
     border: none;
     color: #fff;
     display: flex;
+    flex-direction: row;
+    align-self: flex-end;
     justify-content: flex-end;
     background-color: #6943FF;
     padding-right: 20px;
+    margin-right: 750px;
 }
 
 .light-btn {
@@ -62,6 +61,7 @@ body {
     margin: 30px 0 26px;
 }
 
+/* REMOVES UP/DOWN ARROW IN NUMBER INPUT */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
